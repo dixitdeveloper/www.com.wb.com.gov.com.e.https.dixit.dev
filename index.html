@@ -70,7 +70,6 @@
 		<div class="calc col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
 				<h2>Love Calculator</h2>
 				<img src="doredore.gif" style="width: 100%;">
-				<audio src="doredore.mp3" autoplay="autoplay"></audio>
 				<h5>Input two peoples names to calculate the love....</h5>
 				<form role="form" class="form-horizontal">
 						<div class="form-group">
@@ -86,6 +85,10 @@
 				<p id="warning" class="text-danger"></p>
 				<h1 id="result" class="text-center"></h1>
 		</div>
+		<iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+		<audio id="player" autoplay loop>
+    	<source src="doredore.mp3" type="audio/mp3">
+		</audio>
 	</div>
 </div>
     <script>
