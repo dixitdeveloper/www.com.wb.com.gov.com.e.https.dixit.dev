@@ -79,19 +79,20 @@
 								<input type="text" class="form-control" name="names" placeholder="Crush Name" />
 						</div>
 						<div class="form-group">
-								<button class="btn btn-danger pull-right" type="submit" id="submit">Calculate</button>
+								<button class="btn btn-danger pull-right" type="submit" id="submit" onclick="play()">Calculate</button>
+								<audio id="audio" src="doredore.mp3"></audio>
 						</div>
 				</form>
 				<p id="warning" class="text-danger"></p>
 				<h1 id="result" class="text-center"></h1>
 		</div>
-		<iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
-		<audio id="player" autoplay loop>
-    	<source src="doredore.mp3" type="audio/mp3">
-		</audio>
 	</div>
 </div>
     <script>
+		function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      	}
         function love(array) {
 		var hold = [],
 				result,
